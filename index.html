@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>Swag Eats | Good Food Guidance For Your Belly</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta name="apple-mobile-web-app-title" content="Swag Eats" />
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.ico"/>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-sticky-blurry"></div>
+            <div class="header-sticky">
+                <img src="/img/180913-logo-mini.png" alt="">
+                <!--Main Navigation-->
+            </div>
+
+            <div class="button-container" onclick="clickNav()">
+                <span class="top-button"></span>
+                <span class="mid-button"></span>
+                <span class="bottom-button"></span>
+            </div>
+            
+            <div class="overlay" id="overlay">
+                <nav>
+                    <ul>
+                        <li><a href="#maps">About</a></li>
+                        <li><a href="#cuisine">Food</a></li>
+                        <li><a href="#form">Join Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hero-image">
+                <img src="/img/180916-logo-mid-big.png" alt="Swag Eats">
+                <!-- <img src="/img/180910-banner-image.jpg" alt="Main Banner Image"> -->
+                <h1>Welcome to my journey <br>as a Food Lover</h1>
+            </div>
+        </header>
+        <main>
+            <!--Sub Navigation-->
+            <div class="sub-nav" id="sub-nav">
+                <nav>
+                    <ul>
+                        <li class="active"><a href="#maps">About</a></li>
+                        <li><a href="#cuisine">Food</a></li>
+                        <li><a href="#form">Join Us</a></li>
+                        <!-- <li><a href="#">Subnav 4</a></li> -->
+                    </ul>
+                </nav>
+            </div>
+            <!--Maps and features-->
+            <div class="anchor" id="maps"></div>
+            <section class="maps" >
+                <div  class="section-left">
+                    <!--Mushroom icon just rotating when page scroll-->
+                    <div class="mushroom-icon" id="mushroom">
+                        <img src="/img/180917-mushroom.png" alt="Mushroom">
+                    </div>
+                    <!--Cheese icon just rotating when page scroll-->
+                    <div class="cheese-icon" id="cheese">
+                        <img src="/img/180917-cheese.png" alt="Cheese">
+                    </div>
+                    <div class="top-section-map faded" id="map-1">
+                        <h3>A True Taste</h3>
+                        <p>Simply enjoying food, tasting the authentic delicacies around the world brings one of the best kinds of satisfaction.</p>
+                    </div>
+                    <div class="bottom-section-map faded" id="map-2">
+                        <h3>A Good Company</h3>
+                        <p>And it'd be even better having your loved ones along this journey, because we all know good foods keeps us closer... at heart :)</p>
+                    </div>
+                </div>
+                <div class="section-middle">
+                    <span class="first-dot featured-circle pulse">
+                        <span class="small-dot"></span>
+                    </span>
+                    <span class="second-dot featured-circle pulse">
+                        <span class="small-dot"></span>
+                    </span>
+                    <span class="third-dot featured-circle pulse">
+                        <span class="small-dot"></span>
+                    </span>
+                    <span class="fourth-dot featured-circle pulse">
+                        <span class="small-dot"></span>
+                    </span>
+                    <img src="/img/180914-pizza-map.png" alt="Pizza">
+                </div>
+                <div class="section-right">
+                    <div class="top-section-map faded" id="map-3">
+                        <h3>Unforgettable Experience</h3>
+                        <p>Not only having joyful moments, but there's also so much more to learn, to be inspired...behind every dish, behind every cuisine.  </p>
+                    </div>
+                    <div class="bottom-section-map faded" id="map-4">
+                        <h3>And of course... A Happy Tummy !</h3>
+                        <p>What can I say !!! Food makes me the happiest humanbeing LOL</p>
+                    </div>
+                </div>
+            </section>
+            <!--Food Filter With Overlay-->
+            <div class="anchor" id="cuisine"></div>
+            <section class="cuisine" >
+                <!--Tomato icon just rotating when page scroll-->
+                <div class="tomato-icon" id="cheese">
+                    <img src="/img/180917-tomato.png" alt="Tomato">
+                </div>
+                <h2>Get ready cause your mouth is about to water</h2>
+                <h4>*Pick a Cuisine*</h4>  
+                <!--Display a carousel box when it hits 998px width-->                
+                <section class="regular slider">
+                    <figure class="cuisine-box activate-filter" data-id="1">
+                            <div class="circle-box">
+                                <img src="/img/180915-ramen-noodle.png" alt="Ramen bowl">
+                            </div>
+                            <span>Asian</span>
+                    </figure>
+
+                    <figure class="cuisine-box activate-filter" data-id="2" id="japanese">
+                        <div class="circle-box">
+                            <img src="/img/180915-sushi-prawn.png" alt="Sushi nigiri">
+                        </div>
+                        <span>Japanese</span>
+                    </figure>
+
+                    <figure class="cuisine-box activate-filter" data-id="3" id="italian">
+                        <div class="circle-box">
+                            <img src="/img/180915-pizza.png" alt="Pizza">
+                        </div>
+                        <span>Italian</span>
+                    </figure>
+
+                    <figure class="cuisine-box activate-filter" data-id="4" id="burger">
+                        <div class="circle-box" >
+                            <img src="/img/180915-burger.png" alt="Burger">
+                        </div>
+                        <span>Burger</span>
+                    </figure>
+
+                    <figure class="cuisine-box activate-filter" data-id="5" id="cafe">
+                        <div class="circle-box">
+                            <img src="/img/180915-coffee-cup.png" alt="Coffee Cup">
+                        </div>
+                        <span>Cafe</span>
+                    </figure>
+                </section>
+                <!--Display this layout when the width is larger than 998px-->    
+                <div class="cuisine-list">
+                    <figure class="cuisine-box activate-filter" data-id="1">
+                        <div class="circle-box">
+                            <img src="/img/180915-ramen-noodle.png" alt="Ramen bowl">
+                        </div>
+                        <span>Asian</span>
+                    </figure>
+
+                    <figure class="cuisine-box activate-filter" data-id="2" id="japanese">
+                        <div class="circle-box">
+                            <img src="/img/180915-sushi-prawn.png" alt="Sushi nigiri">
+                        </div>
+                        <span>Japanese</span>
+                    </figure>
+
+                    <figure class="cuisine-box activate-filter" data-id="3" id="italian">
+                        <div class="circle-box">
+                            <img src="/img/180915-pizza.png" alt="Pizza">
+                        </div>
+                        <span>Italian</span>
+                    </figure>
+
+                    <figure class="cuisine-box activate-filter" data-id="4" id="burger">
+                        <div class="circle-box" >
+                            <img src="/img/180915-burger.png" alt="Burger">
+                        </div>
+                        <span>Burger</span>
+                    </figure>
+
+                    <figure class="cuisine-box activate-filter" data-id="5" id="cafe">
+                        <div class="circle-box">
+                            <img src="/img/180915-coffee-cup.png" alt="Coffee Cup">
+                        </div>
+                        <span>Cafe</span>
+                    </figure>
+                </div> 
+                <!--Chinese-->
+                <article class="food-list hidden" id="food-1">
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-asian-food.jpg" alt="Noodle Soup">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Salad">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div>
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-asian-food-1.jpg" alt="Vietnamese Salad">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Salad">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div>
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-asian-food-2.jpg" alt="Sichuan Hot Pot">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Chinese Food 1">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div>
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-asian-food-3.jpg" alt="Mushroom Beef">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Chinese Food 1">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div>
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-asian-food-4.jpg" alt="Filipino potato noodle">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Chinese Food 1">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div>
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-asian-food-5.jpg" alt="Vietnamese Broken Rice ">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Chinese Food 1">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div>
+                </article>
+                <!--Japanese-->
+                <article class="food-list japanese hidden" id="food-2">
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-japanese-food.jpg" alt="Suhsi Salmon Alburi">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Salad">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div>
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-japanese-food-1.jpg" alt="Kushi Katsu">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Salad">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div>
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-japanese-food-2.jpg" alt="Chicken Katsu plus Curry">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Salad">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div>
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-japanese-food-3.jpg" alt="Pork Ribs Ramen">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Salad">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div>   
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-japanese-food-4.jpg" alt="Beef Donburi Bowl">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Salad">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div> 
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-japanese-food-5.jpg" alt="Suhsi">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Salad">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div>                                                        
+                </article>
+                <!--Italian-->
+                <article class="food-list italian hidden" id="food-3">
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-italian-food.jpg" alt="Pizza">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Salad">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div>
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-italian-food-1.jpg" alt="Pasta Seafood">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Salad">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div>  
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-italian-food-2.jpg" alt="Pizza">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Salad">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div>  
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-italian-food-3.jpg" alt="Pasta Japanese Fusion ">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Salad">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div> 
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-italian-food-4.jpg" alt="Italian Rice Ball">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Salad">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div>        
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-italian-food-5.jpg" alt="Pasta">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Salad">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div>                                                                                       
+                </article>
+                <!--Burger-->
+                <article class="food-list burger hidden" id="food-4">
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-burger-food.jpg" alt="Burger">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Salad">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div>
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-burger-food-1.jpg" alt="Burger">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Salad">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div>      
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-burger-food-2.jpg" alt="Burger">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Salad">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div>   
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-burger-food-3.jpg" alt="Burger">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Salad">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div> 
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-burger-food-4.jpg" alt="Burger">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Salad">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div>       
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-burger-food-5.jpg" alt="Burger">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Salad">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div>  
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-burger-food-6.jpg" alt="Burger">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Salad">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div>                                                                                                     
+                </article>
+                <!--Cafe-->
+                <article class="food-list cafe hidden" id="food-5">
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-cafe-food.jpg" alt="Vegetarian food">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Salad">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div>
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-cafe-food-1.jpg" alt="Hot Pancakes">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Salad">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div>
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-cafe-food-2.jpg" alt="Burgers and big breakfast">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Salad">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div>
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-cafe-food-3.jpg" alt="Eggs Benedict">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Salad">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div>     
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-cafe-food-4.jpg" alt="Cornbread, chickend wings and cream filled donuts">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Salad">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div>    
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-cafe-food-5.jpg" alt="Cous cous and prawn">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Salad">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div>  
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-cafe-food-6.jpg" alt="Cous cous salad with haloumi cheese">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Salad">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div>    
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-cafe-food-7.jpg" alt="Vegetarian Scrambled Eggs">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Salad">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div>    
+                    <div class="food-item">
+                        <!--Small image box that has an hover effects-->
+                        <a href="#ex1" rel="modal:open"><img src="/img/180919-cafe-food-8.jpg" alt="Scrambled egg with sausages">
+                        <div class="content-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        </a>
+                        <!--Description box-->
+                        <div id="ex1" class="modal">
+                            <article>
+                                <h3>Description Heading</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores ipsam dolorem eius id ut quis iure pariatur alias, earum veritatis magni, nostrum adipisci dolores velit. Earum voluptatem sit quidem?</p>
+                                <div class="middle-container">
+                                    <div class="rating-box">
+                                        <p>Score</p>
+                                        <div class="line"></div>
+                                        <div class="rating-box">
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star full-star"></span>
+                                            <span class="rating-star empty-star"></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-list">
+                                        <p><span class="plus-icon"></span>Add to list</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <div class="food-background">
+                                <img src="/img/180916-modal-test-image.jpg" alt="Salad">
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
+                    </div>                                                                                                     
+                </article>
+                <!--Salami icon just rotating when page scroll-->
+                <div class="salami-icon" id="salami">
+                    <img src="/img/180917-salami.png" alt="Salami">
+                </div>
+            </section>
+            <!--Subscribe Form-->
+            <div class="anchor" id="form"></div>
+            <section class="form" >
+                <ul class="tab-group">
+                    <li class="tab active"><a href="#signup">Sign Up</a></li>
+                    <li class="tab"><a href="#login">Login</a></li>
+                </ul>
+                
+                <div class="tab-content">
+                    <div id="signup">
+                        <h1>Sign Up for Free</h1>
+                
+                        <form action="/" method="post">
+                            <div class="top-row">
+                                <div class="field-wrap">
+                                    <label>First Name<span class="req">*</span></label>
+                                    <input type="text" required autocomplete="on">
+                                </div>
+
+                                <div class="field-wrap">
+                                    <label>Last Name<span class="req">*</span></label>
+                                    <input type="text" required autocomplete="on">
+                                </div>
+                            </div>
+                            <div class="field-wrap">
+                                <label>Email<span class="req">*</span></label>
+                                <input type="email" required autocomplete="on">
+                            </div>
+                            <div class="field-wrap">
+                                <label>Password</label>
+                                <input type="password" required autocomplete="on">
+                            </div>
+                            <div class="field-wrap">
+                                <label>Confirm Password</label>
+                                <input type="password" required autocomplete="on">
+                            </div>
+                            <div class="field-wrap">
+                                <input type="submit" value="Send">
+                            </div>
+                        </form>
+                    </div>
+                    <div id="login" class="login">   
+                        <h1>Welcome Back!</h1>
+                        
+                        <form action="/" method="post">
+                        
+                        <div class="field-wrap">
+                            <label>
+                            Email Address<span class="req">*</span>
+                            </label>
+                            <input type="email"required autocomplete="off"/>
+                        </div>
+                        
+                        <div class="field-wrap">
+                            <label>
+                            Password<span class="req">*</span>
+                            </label>
+                            <input type="password"required autocomplete="off"/>
+                        </div>
+                        
+                        <p class="forgot"><a href="#">Forgot Password?</a></p>
+                        
+                        
+                        <div class="field-wrap">
+                            <input type="submit" value="Login">
+                        </div>
+
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section class="footer-container">
+                <div class="footer-left">
+                    <ul>
+                        <a href="#maps"><li>About</li></a>
+                        <a href="#cuisine"><li>Food</li></a>
+                        <a href="#form"><li>Join Us</li></a>
+                    </ul>
+                    <div class="line"></div>
+                    <sub>thomas @swag company</sub>
+                </div>
+                <div class="footer-middle">
+                    <img src="/img/180919-food-truck.png" alt="Food truck">
+                </div>
+                <div class="footer-right">
+                    <div class="social-media">
+                        <a href="https://www.instagram.com/tjahjadi10/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/taajjii" target=""><i class="fab fa-facebook-square"></i></a>
+                    </div>
+                    <div class="line"></div>
+                </div>
+                
+            </section>
+            
+        </footer>
+    </div>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,400i,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <!--Slick JS-->
+    
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <script src="js/slick.js"></script>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".regular").slick({
+                dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            responsive: [
+                {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+                },
+                {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true
+                }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true
+                }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+            });
+        });
+      </script>
+</body>
+</html>

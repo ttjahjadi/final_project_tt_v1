@@ -6,7 +6,7 @@
 @font-face {
   font-family: 'Summer Font';
   /* src: url(fonts/HelveticaNeueLTStd-Bd.eot); */
-  src: url(/html/font/Summer\ Font\ Light.woff) format('woff');
+  src: url(font/Summer\ Font\ Light.woff) format('woff');
   font-weight: 300;
   font-style: normal;
 }
@@ -14,7 +14,7 @@
 @font-face {
   font-family: 'Summer Font';
   /* src: url(fonts/HelveticaNeueLTStd-Md.eot); */
-  src: url(/html/font/Summer\ Font\ Bold.woff) format('woff'), url(fonts/HelveticaNeueLTStd-Md.ttf) format('truetype');
+  src: url(font/Summer\ Font\ Bold.woff) format('woff'), url(fonts/HelveticaNeueLTStd-Md.ttf) format('truetype');
   font-weight: 700;
   font-style: normal;
 }
@@ -22,7 +22,7 @@
 @font-face {
   font-family: 'Summer Font';
   /* src: url(fonts/HelveticaNeueLTStd-Lt.eot); */
-  src: url(/html/font/Summer\ Font\ Regular.woff) format('woff'), url(fonts/HelveticaNeueLTStd-Lt.ttf) format('truetype');
+  src: url(font/Summer\ Font\ Regular.woff) format('woff'), url(fonts/HelveticaNeueLTStd-Lt.ttf) format('truetype');
   font-weight: 400;
   font-style: normal;
 }
@@ -30,7 +30,7 @@
 @font-face {
   font-family: 'Summer Font';
   /* src: url(fonts/HelveticaNeueLTStd-Lt.eot); */
-  src: url(/html/font/Summer\ Font\ Regular\ Italic.woff) format('woff'), url(fonts/HelveticaNeueLTStd-Lt.ttf) format('truetype');
+  src: url(font/Summer\ Font\ Regular\ Italic.woff) format('woff'), url(fonts/HelveticaNeueLTStd-Lt.ttf) format('truetype');
   font-weight: 200;
   font-style: italic;
 }
@@ -482,7 +482,7 @@ ul {
 
 .hero-image {
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/img/180913-swag-banner-1.jpg'); */
-  background: url("/img/180913-swag-banner-1.jpg");
+  background: url("../img/180913-swag-banner-1.jpg");
   height: 500px;
   overflow: hidden;
   background-size: cover;
@@ -1144,7 +1144,7 @@ p {
 }
 
 .modal a.close-modal{
-  background-image: url(/img/close.png);
+  background-image: url(../img/close.png);
 }
 
 .add-to-list {
